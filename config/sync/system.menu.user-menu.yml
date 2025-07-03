@@ -1,0 +1,8 @@
+uuid: c98401b7-216a-4fec-a98b-109a50e53534
+langcode: en
+status: true
+dependencies: {  }
+id: user-menu
+label: 'User Menu'
+description: ''
+locked: false

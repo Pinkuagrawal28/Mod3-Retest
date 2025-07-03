@@ -1,0 +1,21 @@
+uuid: 4a3b7f91-2b3f-47bc-aa0a-cb19e89eafa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date_of_salary
+    - paragraphs.paragraphs_type.salary_processing
+  module:
+    - datetime
+id: paragraph.salary_processing.field_date_of_salary
+field_name: field_date_of_salary
+entity_type: paragraph
+bundle: salary_processing
+label: 'Date of Salary'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,23 @@
+uuid: 89f77aec-92c7-452f-b8dd-aa543f9cea23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_basic
+    - paragraphs.paragraphs_type.salary_processing
+id: paragraph.salary_processing.field_basic
+field_name: field_basic
+entity_type: paragraph
+bundle: salary_processing
+label: Basic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,58 @@
+uuid: c7e6b7b0-5cf8-4418-945f-9379da0b5f27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_page.field_social_links
+    - field.field.node.employee_page.field_user_name
+    - field.field.node.employee_page.field_user_profile
+    - field.field.node.employee_page.field_user_roles
+    - node.type.employee_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.employee_page.default
+targetEntityType: node
+bundle: employee_page
+mode: default
+content:
+  field_social_links:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_user_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_user_profile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_user_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

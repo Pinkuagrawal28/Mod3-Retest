@@ -1,0 +1,30 @@
+uuid: 6c06ba07-6224-4e14-9fc1-76a0fc888248
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.salary_processing.field_basic
+    - field.field.node.salary_processing.field_employee_name
+    - field.field.node.salary_processing.field_hra
+    - field.field.node.salary_processing.field_salary_date
+    - field.field.node.salary_processing.field_special_allowances
+    - node.type.salary_processing
+  module:
+    - user
+id: node.salary_processing.teaser
+targetEntityType: node
+bundle: salary_processing
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_basic: true
+  field_employee_name: true
+  field_hra: true
+  field_salary_date: true
+  field_special_allowances: true

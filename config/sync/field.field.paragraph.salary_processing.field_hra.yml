@@ -1,0 +1,23 @@
+uuid: 1767aadb-0afb-4dac-bb8d-f14462d75de5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hra
+    - paragraphs.paragraphs_type.salary_processing
+id: paragraph.salary_processing.field_hra
+field_name: field_hra
+entity_type: paragraph
+bundle: salary_processing
+label: HRA
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

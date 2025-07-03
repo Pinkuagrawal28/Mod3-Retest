@@ -1,0 +1,27 @@
+uuid: 641421fd-0666-4ad7-9b4d-9389009de8b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - node.type.employee_page
+    - node.type.leave
+  module:
+    - media
+    - node
+    - path
+id: employee
+label: Employee
+weight: 4
+is_admin: null
+permissions:
+  - 'create employee_page content'
+  - 'create image media'
+  - 'create leave content'
+  - 'create media'
+  - 'create url aliases'
+  - 'delete own leave content'
+  - 'edit own employee_page content'
+  - 'edit own image media'
+  - 'edit own leave content'
+  - 'update media'

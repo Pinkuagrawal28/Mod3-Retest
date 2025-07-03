@@ -1,0 +1,9 @@
+uuid: cff88731-8953-4fcb-959a-728441f2149c
+langcode: en
+status: true
+dependencies: {  }
+name: 'All Roles'
+vid: all_roles
+description: null
+weight: 0
+new_revision: false

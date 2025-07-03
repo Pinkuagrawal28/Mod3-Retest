@@ -1,0 +1,29 @@
+uuid: 27af4302-d8e4-4702-bef6-d4de64ca462c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-menu
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: bootstrap5_usermenu
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:user-menu'
+settings:
+  id: 'system_menu_block:user-menu'
+  label: 'User Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employee/*'

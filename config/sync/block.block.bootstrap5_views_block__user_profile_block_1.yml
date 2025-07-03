@@ -1,0 +1,30 @@
+uuid: 900c1845-cbd3-423c-a8c9-58513c63a89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user_profile
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__user_profile_block_1
+theme: bootstrap5
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:user_profile-block_1'
+settings:
+  id: 'views_block:user_profile-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
