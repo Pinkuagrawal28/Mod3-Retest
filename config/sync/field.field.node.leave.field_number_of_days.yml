@@ -1,0 +1,23 @@
+uuid: f98dbcbb-23ab-4602-8b37-2cfffed51365
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_days
+    - node.type.leave
+id: node.leave.field_number_of_days
+field_name: field_number_of_days
+entity_type: node
+bundle: leave
+label: 'Number of Days'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 15
+  prefix: ''
+  suffix: ''
+field_type: integer

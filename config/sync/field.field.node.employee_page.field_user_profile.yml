@@ -1,0 +1,29 @@
+uuid: 591ffafa-04fa-4607-9053-9654234d96fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_profile
+    - media.type.image
+    - node.type.employee_page
+id: node.employee_page.field_user_profile
+field_name: field_user_profile
+entity_type: node
+bundle: employee_page
+label: 'User Profile'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

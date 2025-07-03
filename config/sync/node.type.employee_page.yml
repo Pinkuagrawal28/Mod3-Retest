@@ -1,0 +1,17 @@
+uuid: ab45827d-e889-4b74-bd9f-cfbee5c6ef63
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Employee Page'
+type: employee_page
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

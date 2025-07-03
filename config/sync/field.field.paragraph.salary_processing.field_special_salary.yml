@@ -1,0 +1,23 @@
+uuid: c520f877-ee1b-4825-b585-4d0d42574065
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_special_salary
+    - paragraphs.paragraphs_type.salary_processing
+id: paragraph.salary_processing.field_special_salary
+field_name: field_special_salary
+entity_type: paragraph
+bundle: salary_processing
+label: 'Special salary'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

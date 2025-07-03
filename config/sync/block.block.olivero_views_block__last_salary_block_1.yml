@@ -1,0 +1,29 @@
+uuid: b7e5883f-8b32-4f40-8b6a-c5e9514418ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.last_salary
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__last_salary_block_1
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:last_salary-block_1'
+settings:
+  id: 'views_block:last_salary-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employee/*'

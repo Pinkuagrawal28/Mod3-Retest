@@ -1,0 +1,17 @@
+uuid: 0814f0fe-931a-4f16-be70-95ff0d8128c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Salary Processing'
+type: salary_processing
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

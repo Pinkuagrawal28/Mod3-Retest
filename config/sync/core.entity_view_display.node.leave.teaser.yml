@@ -1,0 +1,28 @@
+uuid: dd4d8192-9aa6-4c74-90f6-ab4583722bbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.leave.field_leave_date
+    - field.field.node.leave.field_leave_date_end
+    - field.field.node.leave.field_number_of_days
+    - field.field.node.leave.field_reason
+    - node.type.leave
+  module:
+    - user
+id: node.leave.teaser
+targetEntityType: node
+bundle: leave
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_leave_date: true
+  field_leave_date_end: true
+  field_number_of_days: true
+  field_reason: true

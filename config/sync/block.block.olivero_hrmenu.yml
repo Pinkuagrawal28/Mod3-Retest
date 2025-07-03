@@ -1,0 +1,34 @@
+uuid: f31f2509-ab40-4fba-996c-a282edf81d3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.hr-menu
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_hrmenu
+theme: olivero
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:hr-menu'
+settings:
+  id: 'system_menu_block:hr-menu'
+  label: 'HR Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      hr: hr

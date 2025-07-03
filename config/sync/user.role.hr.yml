@@ -1,0 +1,50 @@
+uuid: 66fa6535-8c6d-45d8-a663-a3af5ef856fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - node.type.employee_page
+    - node.type.leave
+    - node.type.salary_processing
+    - taxonomy.vocabulary.all_roles
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - media
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+id: hr
+label: HR
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'create employee_page content'
+  - 'create image media'
+  - 'create media'
+  - 'create salary_processing content'
+  - 'create terms in all_roles'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete any employee_page content'
+  - 'delete any salary_processing content'
+  - 'delete own employee_page content'
+  - 'delete own salary_processing content'
+  - 'edit any employee_page content'
+  - 'edit any leave content'
+  - 'edit any salary_processing content'
+  - 'edit own comments'
+  - 'edit own employee_page content'
+  - 'edit own image media'
+  - 'edit own leave content'
+  - 'edit own salary_processing content'
+  - 'edit terms in tags'
+  - 'update media'

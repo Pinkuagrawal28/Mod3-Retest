@@ -1,0 +1,53 @@
+uuid: c6309e76-5bba-4e4f-8fe4-79abf6fa2a76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_media_links.field_facebook
+    - field.field.paragraph.social_media_links.field_linkedin
+    - field.field.paragraph.social_media_links.field_twitter
+    - paragraphs.paragraphs_type.social_media_links
+  module:
+    - link
+id: paragraph.social_media_links.default
+targetEntityType: paragraph
+bundle: social_media_links
+mode: default
+content:
+  field_facebook:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_linkedin:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_twitter:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

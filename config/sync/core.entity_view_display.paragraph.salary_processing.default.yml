@@ -1,0 +1,54 @@
+uuid: 1ee4bdbc-2e34-488b-a913-90a4457e6029
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.salary_processing.field_basic
+    - field.field.paragraph.salary_processing.field_date_of_salary
+    - field.field.paragraph.salary_processing.field_hra
+    - field.field.paragraph.salary_processing.field_special_salary
+    - paragraphs.paragraphs_type.salary_processing
+  module:
+    - datetime
+id: paragraph.salary_processing.default
+targetEntityType: paragraph
+bundle: salary_processing
+mode: default
+content:
+  field_basic:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date_of_salary:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hra:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_special_salary:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

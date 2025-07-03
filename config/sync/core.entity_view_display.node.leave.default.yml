@@ -1,0 +1,59 @@
+uuid: f1946879-ee60-49e2-8124-357140b86604
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leave.field_leave_date
+    - field.field.node.leave.field_leave_date_end
+    - field.field.node.leave.field_number_of_days
+    - field.field.node.leave.field_reason
+    - node.type.leave
+  module:
+    - datetime
+    - user
+id: node.leave.default
+targetEntityType: node
+bundle: leave
+mode: default
+content:
+  field_leave_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_leave_date_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_number_of_days:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_reason:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
